@@ -1,0 +1,25 @@
+body {
+	font-size: 13px;
+}
+
+.main-grid {
+	width: 90vw;
+	max-width: 375px;
+
+	grid-template-rows: repeat(3, max-content);
+	grid-template-columns: 1fr;
+}
+
+.offer-text {
+	grid-column: 1;
+
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.subscribe {
+	border-radius: 0;
+}
+
+.why-us {
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
+}

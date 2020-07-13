@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+	font-size: 16px;
+	font-family: 'Karla', sans-serif;
+
+	--Light-Gray: hsl(204, 43%, 93%);
+	--Grayish-Blue: hsl(218, 22%, 67%);
+	--Cyan: hsl(179, 62%, 43%);
+	--Brighter-Cyan: hsl(179, 47%, 52%);
+	--Bright-Yellow: hsl(71, 73%, 54%);
+
+	--box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	--border-radius: 0.8rem;
+
+	--font-size-inner-text: 1.08rem;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--Light-Gray);
+
+	min-height: 100vh;
+	margin: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-grid {
+	width: 80vw;
+	max-width: 875px;
+	margin: 2rem 1rem;
+
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+}
+
+.main-grid > * {
+	padding: 2rem 3rem;
+}
+
+.offer-text {
+	grid-column: 1 / -1;
+
+	background-color: white;
+
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+}
+
+.offer-text h1 {
+	margin-bottom: 2rem;
+
+	color: var(--Cyan);
+}
+
+h3 {
+	font-size: 1.3em;
+	color: white;
+	letter-spacing: 0.07rem;
+}
+
+.offer-text h3 {
+	color: var(--Bright-Yellow);
+}
+
+.offer-text p {
+	font-size: var(--font-size-inner-text);
+	line-height: 2em;
+}
+
+.subscribe {
+	background-color: var(--Cyan);
+	color: var(--Light-Gray);
+
+	border-bottom-left-radius: var(--border-radius);
+}
+
+.subscribe p {
+	font-size: var(--font-size-inner-text);
+}
+
+.subscribe .subscription-cost {
+	display: flex;
+	align-items: center;
+
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.subscribe .subscription-cost .currency {
+	color: white;
+	font-size: 200%;
+	font-weight: bold;
+
+	margin-right: 0.8rem;
+}
+
+.subscribe .cta {
+	width: 100%;
+	margin: 1rem 0;
+	padding: 1rem;
+	
+	border-radius: 0.5rem;
+	border: none;
+	outline: none;
+	box-shadow: var(--box-shadow);
+
+	background-color: var(--Bright-Yellow);
+
+	font-size: 1rem;
+
+	cursor: pointer;
+}
+
+.subscribe .cta a {
+	text-decoration: none;
+	color: white;
+}
+
+.subscribe .cta:active {
+	transform: scale(1.05);
+}
+
+.why-us {
+	background-color: var(--Brighter-Cyan);
+	color: var(--Light-Gray);
+
+	border-bottom-right-radius: var(--border-radius);
+}
+
+.why-us ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.why-us ul li {
+	font-size: var(--font-size-inner-text);
+	margin: 0.2rem 0;
+}
