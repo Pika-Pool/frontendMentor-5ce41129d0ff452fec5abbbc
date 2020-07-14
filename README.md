@@ -1,7 +1,7 @@
 # Frontend Mentor - Single Price Grid Component
 
 ***Preview at*** : 
-
+[https://price-grid-component.pika-pool.vercel.app/](https://price-grid-component.pika-pool.vercel.app/)
 
 <img src="./design/desktop-preview.jpg" width="500px">
 
